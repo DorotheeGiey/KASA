@@ -1,0 +1,13 @@
+body {
+    margin : auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:375px){
+    body {
+        margin: auto;
+    }
+
+}

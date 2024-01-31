@@ -1,0 +1,39 @@
+$color-primary : #FF6060; 
+
+.hostContainer{
+    display:flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: right;
+    align-items: center;
+
+    .hostContainer_name{
+        font-size: 18px;
+        color: $color-primary;
+        width : 100px;
+        text-align: center;
+    }
+    .hostContainer_picture{
+        border-radius: 60px;
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .hostContainer{
+        gap: 10px;
+
+        .hostContainer_name{
+            font-size: 12px;
+            width : 50%;
+            margin : 0;
+        }
+        .hostContainer_picture{
+            border-radius: 60px;
+            width: 32px;
+            height: 32px;
+        }
+    }
+    
+}

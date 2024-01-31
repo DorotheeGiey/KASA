@@ -1,0 +1,96 @@
+$color-primary : #FF6060;
+
+.logementContainer{
+    max-width: 1240px;
+    margin: auto;;
+    margin-bottom: 50px;
+}
+
+.descriptifContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top : 20px;
+    justify-content: space-between;
+}
+
+.logementTitre{
+    font-size : 36px; 
+    color: $color-primary;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.logementLocalisation{
+    font-size : 18px;
+    color: $color-primary;
+    margin: 0px; 
+}
+
+.logementTags{
+    background-color: $color-primary;
+    color: white;
+
+}
+
+.descriptifContainer_descripEquip{
+    display: flex;
+    flex-direction: row;
+    margin-top : 20px;
+    justify-content: space-between;
+}
+
+.listEquipments{
+    margin :0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left:20px;
+    line-height: 25px;
+}
+
+.equipments{
+    color: $color-primary;
+    font-size: 18px;
+    list-style: 26px;
+    list-style-type:  none;
+}
+
+@media screen and (max-width:375px){
+
+    .logementContainer{
+       width: 335px;
+       margin: auto;;
+        margin-bottom: 20px;
+    }
+    .descriptifContainer{
+        flex-direction: column;
+        row-gap: 0px;
+        margin-top : 0px;
+    }
+    
+    .descriptifContainer_descripEquip{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .logementTitre{
+        font-size : 18px;
+    }
+    .logementLocalisation{
+        font-size : 14px;
+    }
+    .descriptifContainer_hostrate{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin : 0;        
+    }
+    .listEquipments{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        line-height: 17px;
+    }
+    .equipments{
+        font-size: 12px;
+        list-style: 17px;
+    }
+
+}

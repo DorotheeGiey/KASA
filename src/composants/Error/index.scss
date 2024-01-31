@@ -1,0 +1,56 @@
+$color-primary : #FF6060;
+
+.errorWrapper{
+    width : 100%;
+    margin:auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    .errorWrapper_titre{
+        font-weight: 700; 
+        font-size: 288px;
+        color : $color-primary;
+        margin : 0;
+        margin-bottom: 50px;
+        text-align: center;
+        }
+
+     .errorWrapper_text{
+        font-weight: 500; 
+        font-size: 36px;
+        color : $color-primary;
+        text-align: center;
+        margin-bottom: 100px;
+        }
+
+      .errorWrapper_container{
+         text-align: center;
+      }
+
+     .errorWrapper_container--link{
+        font-size: 18px;
+        color : $color-primary;
+        text-decoration: none;
+        text-decoration: underline $color-primary;
+        }
+    
+}
+
+@media screen and (max-width:375px){
+      .errorWrapper{
+         margin-top: 70px;
+         margin-bottom: 70px;
+         .errorWrapper_titre{
+               font-size: 96px;
+               margin-bottom: 70px;
+               }
+         .errorWrapper_text{
+               font-size: 18px;
+               margin-bottom: 70px;
+               }
+         .errorWrapper_container--link{
+                  font-size: 14px;
+                  }
+         }
+     
+}

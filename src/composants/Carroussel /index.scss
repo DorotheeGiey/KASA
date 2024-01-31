@@ -1,0 +1,65 @@
+.carrousselBloc{
+    width: 100%px;
+    height: 415px;
+    border-radius : 25px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position : relative;
+
+    .carrousselBloc__img{
+        width: 100%;
+        height: 415px;
+        border-radius : 25px;
+        object-fit: cover;
+    } 
+    .carrousselBloc__boutonPrev{
+        cursor: pointer;
+        position: absolute;        
+        top: 40%;
+        left: 1%;
+        transform: rotate(180deg)
+    }
+    .carrousselBloc__boutonNext{
+        cursor: pointer;
+        position: absolute;        
+        top: 40%;
+        right: 1%;
+    }
+    .carrousselBloc__imageNumber{
+        position : absolute; 
+        bottom : 10%; 
+        left:50%;
+        font-size : 20px;
+        color:white;
+    }
+}
+
+@media screen and (max-width:375px){
+    .carrousselBloc{
+        width: 100%px;
+        height: 225px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .carrousselBloc__img{
+            width: 100%;
+            height: 225px;
+            object-fit: cover;
+        }
+        .carrousselBloc__boutonPrev{
+            top: 30%;
+            left: 1%;
+            transform: rotate(180deg) scale(25%);
+        }
+        .carrousselBloc__boutonNext{
+            top: 30%;
+            right: 1%;
+            transform: scale(25%);
+        }
+        .carrousselBloc__imageNumber{
+            bottom : 10%; 
+            left:50%;
+            font-size : 15px;
+        }
+    }
+}

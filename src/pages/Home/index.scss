@@ -1,0 +1,13 @@
+.homeContainer{
+    max-width: 1240px;
+    margin: auto;
+}
+
+@media screen and (max-width:375px){
+    .homeContainer{
+        width: 335px;
+        margin: auto;
+    }
+    
+}
+

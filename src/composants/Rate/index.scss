@@ -1,0 +1,17 @@
+.rateContainer{
+    margin-top: 5px;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+@media screen and (max-width:375px){
+    .starActive{
+        width:20px;
+        // display : inline-block;
+    }
+    .starInactive{
+        width:20px;
+    }
+}
+

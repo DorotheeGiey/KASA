@@ -1,0 +1,17 @@
+.containerAbout{
+    max-width: 1240px;
+    margin : auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 50px;
+}
+
+
+@media screen and (max-width:375px){
+.containerAbout{
+    width: 335px;
+    row-gap: 15px;
+    margin-bottom: 30px;
+}
+}

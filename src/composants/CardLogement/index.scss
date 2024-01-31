@@ -1,0 +1,71 @@
+.cardLogement{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content :space-between;
+    background-color: #F6F6F6;
+    margin-top : 60px;
+    margin-bottom: 60px;
+    border-radius: 25px;
+}
+
+.cardLogementContainer{
+    position: relative;
+    margin : 30px;
+    
+    .cardLogementContainer__img{
+        width : 340px;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .cardLogementContainer__gradient{
+        width : 340px;
+        height: 340px;
+        top:0;
+        left:0;
+        border-radius: 10px;
+        box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
+        position: relative;
+        z-index: 1;
+    }
+    
+    .cardLogementContainer__titre{
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        z-index: 2;
+        text-align: left;
+        bottom : 0; 
+        padding-left: 20px; ;
+        z-index: 2;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    .cardLogement{
+        background-color:transparent;
+        margin-top : 30px;
+        margin-bottom: 30px;
+        row-gap: 35px;;
+    }
+    .cardLogementContainer{
+        width : 100%;
+        margin : 0px;
+
+        .cardLogementContainer__img{
+            width : 335px;
+            height: 335px;
+        }
+        .cardLogementContainer__gradient{
+            width : 335px;
+            height: 335px;
+        }
+    }
+
+
+}
