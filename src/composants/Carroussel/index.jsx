@@ -6,8 +6,7 @@ import fleche from '../../assets/visuels/Vector.png'
 
 import './index.scss'
 
-
-function Carroussel () {
+function Carroussel(){
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -41,9 +40,7 @@ function Carroussel () {
         )}
     </div>
 );
-}
 
-export default Carroussel
+};
 
-
-
+export default Carroussel;

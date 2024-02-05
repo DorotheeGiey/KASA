@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import data from '../../assets/datas/datasLogement.json';
 
 import './index.scss'
-import Carroussel from '../../composants/Carroussel '
+import Carroussel from '../../composants/Carroussel'
 import Tags from '../../composants/Tags'
 import Host from '../../composants/Host'
 import Rate from '../../composants/Rate'
@@ -21,7 +21,7 @@ if (logement) {
 
     return (   
         <div className="logementContainer">
-            <Carroussel />
+            <Carroussel/>
             <div className="descriptifContainer">
                 <div className="descriptifContainer_titrelocation"> 
                     <h1 className="logementTitre">{logement.title}</h1>
@@ -29,7 +29,7 @@ if (logement) {
                     <Tags tags={logement.tags}/>
                 </div>
                 <div className="descriptifContainer_hostrate">
-                    <Host />
+                    <Host/>
                     <Rate/>
                 </div>
             </div>
