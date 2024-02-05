@@ -8,7 +8,6 @@ import { Link } from "react-router-dom";
 
 function Collapse (props){
 
-    
     const [open, setOPen] = useState(false);
     const toggle = () => {
         setOPen(!open);

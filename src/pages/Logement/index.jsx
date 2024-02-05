@@ -37,8 +37,8 @@ if (logement) {
                     <Collapse pageType="logement" label="Description" text={`${logement.description}`}/>
                     <Collapse pageType="logement" label="Équipements">
                         <ul className="listEquipments">
-                            {equipments.map((equipment, index) => (
-                             <li className="equipments" key={index}>{equipment}</li>
+                            {equipments.map((equipment, id) => (
+                             <li className="equipments" key={id}>{equipment}</li>
                             ))}
                          </ul>
                     </Collapse>
